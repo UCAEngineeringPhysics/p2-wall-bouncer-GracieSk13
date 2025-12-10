@@ -95,9 +95,21 @@ Major required components are listed below:
 - Electronic components' values have to match your actual circuit.
 
 #### 3.3 (6%) Software Design
-Use a [flowchart](https://en.wikipedia.org/wiki/Flowchart) or a [algorithm/pseudocode table](https://www.overleaf.com/learn/latex/Algorithms) or a [itemized list](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists) to explain your wall avoidance strategy.
+Use a [flowchart](https://en.wikipedia.org/wiki/Flowchart) or a [algorithm/pseudocode table](https://www.overleaf.com/learn/latex/Algorithms) or a [itemized list](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists) to expl5.ain your wall avoidance strategy.
+
+MY LIST:
+1.initialize hardward and make sure the sensor works, and reads. this includes flashing white to confirm it is ready.
+2.through each of the movement steps, check the pause mode, which is the button. While alsochecking the battery status, the green to blue to red runtimes.
+3.movement approach,  drive forward to see what the sensor picks up and how far.
+4.movement appraod, now drive backwards and see how the sensor reads distance.
+5.movement approach, but rather than actually moving, check the spins. to make sure the robot is able to change direction.
+6.now add it together the approach then retreat then spin, then repeat.
+7. then tweak any necessary changes, such as lighting.
 
 #### 3.4 (4%) Energy Efficient Path Planning 
 > The goal is using this robot to cover a rectangle-shape area.
 > Do your research, make reasonable assumptions and propose a path pattern for the robot to follow.
-> Please state why this pattern is energy efficient.  
+> Please state why this pattern is energy efficient.
+
+>i looked into some patterns, similar to how lawn mowers and rumbas make. but that robot might start at a corner adn make staright lines parallel to the longer side of a room or area. at each edge it turns 180 degrees, and shift over by  a full robot width in the opposite direction.its energy efficient because theres not overlap, which I will say this is really only fail proff with a lawnmower path because the grass doesnt really move around. But if you had a large indoor mess and the then robot just pushes it to the side the the robot would miss it, and would then need to make multiple passes. ergo negating the energy efficient aspect of the pattern. I did have to look, but apparently long straight lines are better for the motors. Im not too sure but apparently its more steady current making it run more efficiently.
+
